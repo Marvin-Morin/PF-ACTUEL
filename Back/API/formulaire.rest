@@ -1,0 +1,11 @@
+POST http://localhost:3000/contact/formulaire
+Content-Type: application/json
+
+{
+  "nom": "Doe",
+  "prenom": "John",
+  "email": "john.doe@example.com",
+  "entreprise": "Example Inc",
+  "objet": "Demande d'information",
+  "message": "Bonjour, j'aimerais obtenir plus d'informations sur vos services."
+}

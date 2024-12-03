@@ -1,0 +1,158 @@
+#contact_section {
+  /* Applique un style de disposition en colonne pour les éléments enfants */
+  flex-direction: column; /* Centre les éléments enfants horizontalement */
+  justify-content: center; /* Centre les éléments enfants verticalement */
+  align-items: center; /* Ajoute un espace entre les éléments enfants */
+  padding: 50px;
+}
+
+#contact_section img {
+  /* Ajoute une transition fluide pour tous les attributs, initialise l'échelle à 1 */
+  transition: 0.3s all ease-out;
+  transform: scale(1);
+}
+
+#contact_section img:hover {
+  /* Ajoute une transition fluide et agrandit l'image au survol */
+  transition: 0.3s all ease-out;
+  transform: scale(1.2);
+}
+
+#reseaux_section {
+  /* Affiche les éléments enfants en ligne avec un espace entre eux */
+  display: flex;
+  gap: 20px;
+  margin: 20px auto;
+}
+
+/* FORMULAIRE  */
+form {
+  margin: 50px auto 0px auto;
+  width: 50vw;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  width: 60%;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4em;
+}
+
+input {
+  width: 100%;
+  padding: 0.5em 0.1rem;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 20px;
+  padding: 0.5em 0.1rem;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+}
+
+.button {
+  clear: both;
+  text-align: center;
+  padding: 1em;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+#contact_section span {
+  display: none;
+  background-color : #4caf50;
+  padding: 10px;
+  border-radius : 5px;
+  color: white;
+  margin-top:  50px;
+}
+
+@keyframes success {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.success-animation {
+  animation: success 1s ease forwards;
+  display: block;
+}
+
+
+@media (max-width : 992px) {
+
+  /* FORMULAIRE  */
+form {
+  margin: 50px auto 0px auto;
+  width: 60vw;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  .column {
+    width: 80%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.4em;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.5em 0.1rem;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+  }
+  
+}
+
+/* Styles pour le GIF de chargement du formulaire */
+#form-loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* S'assure que le loader est au-dessus de tout le contenu */
+}
+
+#loading img {
+  width: auto;
+  height: auto;
+}

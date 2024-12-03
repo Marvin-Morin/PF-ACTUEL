@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio de Marvin Morin, développeur web full-stack."
+    />
+    <meta name="author" content="Marvin Morin" />
+    <meta
+      name="keywords"
+      content="Marvin Morin, développeur web, full-stack, HTML, CSS, JavaScript, React, TypeScript, SCSS, Java, MySQL, SQL. En recherche d'alternance pour la rentré 2024."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Portfolio de Marvin Morin" />
+    <meta
+      property="og:description"
+      content="Découvrez les projets et compétences de Marvin Morin, développeur web full-stack. En recherche d'alternance pour la rentré 2024."
+    />
+    <meta property="og:image" content="/ressource/img/Marvin-Morin.png" />
+    <meta property="og:url" content="http://marvin.fronthub.fr" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Portfolio de Marvin Morin" />
+    <meta
+      name="twitter:description"
+      content="Découvrez les projets et compétences de Marvin Morin, développeur web full-stack. En recherche d'alternance pour la rentré 2024."
+    />
+    <meta name="twitter:image" content="/ressource/img/Marvin-Morin.png" />
+
+    <!-- CSS -->
+    <!-- GLOBALE -->
+    <link rel="stylesheet" href="/CSS/globale.css" />
+    <!-- NAV MENU -->
+    <link rel="stylesheet" href="/CSS/nav.css" />
+    <!-- PRESENTATION -->
+    <link rel="stylesheet" href="/CSS/presentation.css" />
+    <!-- COMPETENCES -->
+    <link rel="stylesheet" href="/CSS/competences.css" />
+    <!-- PROJETS -->
+    <link rel="stylesheet" href="/CSS/projets.css" />
+    <!-- CONTACT -->
+    <link rel="stylesheet" href="/CSS/contact.css" />
+    <!-------------------------------------------------->
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-------------------------------------------------->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/ressource/img/Marvin-Morin.png" />
+    <!-------------------------------------------------->
+
+    <!-- Schema.org pour l'auteur -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Marvin Morin",
+        "jobTitle": "Développeur Web Full-Stack",
+        "url": "http://marvin.fronthub.fr",
+        "image": "/ressource/img/Marvin-Morin.png",
+        "sameAs": [
+          "https://www.linkedin.com/in/marvin-morin",
+          "https://github.com/MarvinMorin"
+        ],
+        "description": "Développeur web full-stack avec expertise en HTML, CSS, JavaScript, et recherche une alternance pour la rentrée 2024."
+      }
+    </script>
+
+    <!-- Schema.org pour le site web -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Portfolio de Marvin Morin",
+        "url": "http://marvin.fronthub.fr",
+        "description": "Découvrez les projets et compétences de Marvin Morin, développeur web full-stack."
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- GIF de chargement -->
+    <div id="loading">
+      <img
+        src="/ressource/icons/Bean Eater@1x-1.0s-200px-200px.gif"
+        alt="Loading..."
+      />
+    </div>
+
+    <nav>
+      <span id="navigation">Profil</span>
+      <!-- Croix menu responsive-->
+      <button class="menu-icon cross">
+        <span></span>
+      </button>
+      <!---->
+      <div id="liens_menu">
+        <ul>
+          <a href="./ressource/cv/CV-Marvin-Morin-2024-2025.pdf" download>
+            <button>Télécharger CV</button>
+          </a>
+          <li id="profil">Profil</li>
+          <li id="competences">Compétences</li>
+          <li id="projets">Projets</li>
+          <li id="contact">Contact</li>
+          <a target="_blank" href="https://2m-web.fr/"><li id="pro">2M web</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- SECTION PROFIL -->
+
+    <section id="presentation_section" class="displayed hidden">
+      <div id="photo_bio" itemscope itemtype="https://schema.org/Person">
+        <img src="/ressource/img/Marvin-Morin.png" alt="Photo Marvin Morin" itemprop="image" />
+        </div>
+        <div id="bio">
+          <h1>Marvin Morin</h1>
+          <p itemprop="description">
+            Enthousiaste à l'égard de la profession de développeur web, je me
+            passionne particulièrement pour la résolution de problèmes et la
+            création exhaustive de sites internet à partir de maquettes. Mon
+            parcours autodidacte, entamé en 2017 sur la plateforme de formation
+            en ligne "Udemy", m'a permis d'acquérir des compétences solides en
+            HTML, CSS et JavaScript.
+            <br /><br />
+            Entre 2022 et 2023, durant une formation professionnelle
+            approfondie, j'ai consolidé mes connaissances et élargi mon
+            expertise en maîtrisant les langages de programmation "SCSS" et
+            "Typescript". En 2023, j'ai approfondi mes compétences en
+            travaillant avec le framework REACT et en explorant le domaine du
+            web sémantique.
+            <br /><br />
+            Actuellement engagé dans une formation spécialisée en concépteur
+            développement d'application web et mobile, je suis en train
+            d'acquérir des compétences avancées en Angular, Docker, TypeScript
+            et prochainement Fluter. Mon engagement continu dans l'apprentissage
+            me permet de rester à jour avec les dernières technologies et de
+            m'adapter constamment aux évolutions de l'industrie du développement
+            web.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION COMPETENCES -->
+
+    <section id="competences_section" class="hidden">
+      <div id="competences_content">
+        <img src="/ressource/icons/html-5.png" alt="HTML" />
+        <img src="/ressource/icons/css-3.png" alt="CSS" />
+        <img src="/ressource/icons/sass.png" alt="SCSS" />
+        <img src="/ressource/icons/script-java.png" alt="JavaScript" />
+        <img src="/ressource/icons/typescript.png" alt="TypeScript" />
+        <img src="/ressource/icons/LogoReact.png" alt="React" />
+        <img src="/ressource/icons/wordpress.png" alt="Wordpress" />
+        <img src="/ressource/icons/java.png" alt="Java" />
+        <img src="/ressource/icons/Logo-SQL.png" alt="SQL" />
+        <img src="/ressource/icons/MySQL.png" alt="MySQL" />
+        <img src="/ressource/icons/mongodb-icon.svg" alt="MongoDB" />
+        <img src="/ressource/icons/mongoose.webp" alt="Mongoose" />
+        <img
+          src="/ressource/icons/angular-icon-logo-5FC0C40EAC-seeklogo.com.png"
+          alt="angular"
+        />
+        <img
+          src="/ressource/icons/docker_original_logo_icon_146556.webp"
+          alt="docker"
+        />
+        <img
+          src="/ressource/icons/Visual_Studio_Code_1.35_icon .png"
+          alt="Visual Studio Code"
+        />
+        <img
+          src="/ressource/icons/premiere-pro.png"
+          alt="Logiciel de montage vidéo - Première pro"
+        />
+      </div>
+      <div
+        id="swipe_indicator"
+        class="rotate-on-max"
+        onclick="scrollCompetences()"
+      >
+        Swipe<img src="/ressource/icons/flecheDroite.png" alt="swipe" />
+      </div>
+    </section>
+
+    <!-- SECTION PROJETS -->
+
+    <section id="projets_section" class="hidden" itemscope itemtype="https://schema.org/CreativeWork">
+      <img>
+      <div id="img_section" itemscope itemtype="https://schema.org/CreativeWork">
+        <img
+          class="imageprojet"
+          id="img_api"
+          src="/ressource/images_projets/API.png"
+          alt="API METEO"
+          itemprop="image"
+        />
+        <img
+          class="imageprojet"
+          id="img_calculatrice"
+          src="/ressource/images_projets/Calculatrice.png"
+          alt="API Calculatrice"
+          itemprop="image"
+        />
+        <img
+          class="imageprojet"
+          id="img_frontendmentor"
+          src="/ressource/images_projets/frontend-mentor-exercice.png"
+          alt="Front-end mentor - Exercice"
+          itemprop="image"
+        />
+        <img
+          class="imageprojet"
+          id="img_lacreme"
+          src="/ressource/images_projets/La-Creme.png"
+          alt="Site la crème - Restaurent fictif"
+          itemprop="image"
+        />
+        <!-- <img
+          class="imageprojet"
+          id="img_wordpress"
+          src="/ressource/images_projets/wp-shop.png"
+          alt="WP"
+        /> -->
+        <img
+          class="imageprojet"
+          id="wordpress-institut_marie_therese_solacroup"
+          src="/ressource/images_projets/institut-marie-therese-solacroup-hebert.png"
+          alt="Institut Marie-thérèse solacroup hébert Dinard"
+          itemprop="image"
+        />
+        <img
+          class="imageprojet"
+          id="img_quiz"
+          src="/ressource/images_projets/Quiz.png"
+          alt="Quiz projet perso"
+          itemprop="image"
+        />
+      </div>
+
+      <div
+        id="swipe_indicator_projets"
+        class="rotate-on-max"
+        onclick="scrollProjets()"
+      >
+        Swipe<img
+          id="swipe_arrow_img"
+          src="/ressource/icons/flecheDroite.png"
+          alt="swipe"
+          itemprop="image"
+        />
+      </div>
+
+      <!-- MODALE -->
+
+      <!-- MODALE API -->
+
+      <div class="modale api close">
+        <img src="/ressource/icons/croix.png" alt="fermer" />
+        <p itemprop="name">Apprendre à maitriser une API en manipulant un fichier Json.</p>
+        <a
+          href="https://marvin.fronthub.fr/Mes-projets/Front-End/JavaScript/API-METEO/index.html"
+          itemprop="url"
+          itemprop="url"
+          >Voir le projet</a
+        >
+      </div>
+
+      <!-- MODALE CALCULATRICE -->
+
+      <div class="modale calculatrice close">
+        <img src="/ressource/icons/croix.png" alt="fermer" />
+        <p itemprop="name">
+          Apprendre à maitriser l'algorithmie / les opérateurs en TypeScript.
+        </p>
+        <a
+          href="https://marvin.fronthub.fr/Mes-projets/Perso/JavaScript/Calculatrice"
+          itemprop="url"
+          >Voir le projet</a
+        >
+      </div>
+
+      <!-- MODALE FRONT-END MENTOR -->
+
+      <div class="modale frontendmentor close">
+        <img src="/ressource/icons/croix.png" alt="fermer" />
+        <p itemprop="name">
+          Une maquette du site "Front-end mentor que j'ai codé pour améliorer
+          mes compétences en HTML / CSS et Javascript.
+        </p>
+        <a
+          href="https://marvin.fronthub.fr/Mes-projets/Front-End/HTML-CSS/Frontend-mentor/"
+          itemprop="url"
+          >Voir le projet</a
+        >
+      </div>
+
+      <!-- MODALE LA CREME -->
+
+      <div class="modale lacreme close">
+        <img src="/ressource/icons/croix.png" alt="fermer" />
+        <p itemprop="name">Une maquette que j'ai intégré en cours de front.</p>
+        <a
+          href="https://marvin.fronthub.fr/Mes-projets/Front-End/HTML-CSS/La-Creme/"
+          itemprop="url"
+          >Voir le projet</a
+        >
+      </div>
+
+      <!-- MODALE WORDPRESS
+
+      <div class="modale wordpress close">
+        <img src="/ressource/icons/croix.png" alt="fermer" />
+        <p>
+          Apprendre à maitriser le CMS Wordpress <br />
+          ainsi que les extensions : <br /><br />
+          WooCommerce, Yoast SEO, SecuPress Free, UpdraftPlus,<br />
+          WP-Optimize.
+        </p>
+        <a href="https://marvin.fronthub.fr/wp">Voir le projet</a>
+      </div> -->
+
+      <!-- MODALE wordpress-institut_marie_therese_solacroup -->
+
+      <div class="modale wordpress_imts close">
+        <img src="/ressource/icons/croix.png" alt="fermer" />
+        <p itemprop="name">
+          Durand ma période de stage en formation front-end, j'ai intégré la
+          nouvelle maquette de l'institut Marie-Thérèse Solacroup via le CMS
+          wordpress.
+        </p>
+        <a href="https://www.institutsolacroup.com/"
+          itemprop="url"
+      >Voir le projet</a>
+      </div>
+
+      <!-- MODALE quiz -->
+
+      <div class="modale quiz close">
+        <img src="/ressource/icons/croix.png" alt="fermer" />
+        <p itemprop="name">Apprendre l'algorithmie avec TypeScript.</p>
+        <a href="https://marvin.fronthub.fr/Mes-projets/Perso/JavaScript/Quiz/"
+          itemprop="url"
+          >Voir le projet</a
+        >
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <!-- http://marvin.fronthub.fr/contact/formulaire -->
+
+    <section id="contact_section" class="hidden"  itemscope itemtype="https://schema.org/ContactPage">
+      <span id="success-message" role="alert" class="hidden">Email envoyé avec succès</span>
+      <!-- Span en cas d'erreur -->
+      <span  id="error-message" role="alert"></span>
+
+      <!-- GIF de chargement pour le formulaire -->
+      <div id="form-loading" class="hidden">
+        <img
+          src="/ressource/icons/Bean Eater@1x-1.0s-200px-200px.gif"
+          alt="Loading..."
+        />
+      </div>
+
+      <form action="/contact/formulaire" method="POST" itemscope itemtype="https://schema.org/ContactPoint">
+        <div class="column">
+          <label for="nom">Nom *</label>
+          <input type="text" id="nom" name="nom" required itemprop="familyName" />
+          <label for="prenom">Prénom *</label>
+          <input type="text" id="prenom" name="prenom" required itemprop="givenName" />
+    
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required itemprop="email" />
+    
+          <label for="entreprise">Entreprise</label>
+          <input type="text" id="entreprise" name="entreprise" itemprop="name" />
+    
+          <label for="objet">Objet</label>
+          <input type="text" id="objet" name="objet" itemprop="description" />
+    
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" required itemprop="message"></textarea>
+        </div>
+        <button type="submit">Envoyer</button>
+      </form>
+
+ <!-- Section des réseaux sociaux -->
+ <div id="reseaux_section" aria-label="Suivez-moi sur les réseaux sociaux">
+  <a href="https://github.com/Marvin-Morin" target="_blank" aria-label="Github Marvin Morin">
+    <img src="/ressource/icons/github.png" alt="Github Marvin Morin" />
+  </a>
+  <a href="https://codepen.io/Marvin_2M" target="_blank" aria-label="Codepen Marvin Morin">
+    <img src="/ressource/icons/codepen.png" alt="Codepen Marvin Morin" />
+  </a>
+  <a href="https://www.linkedin.com/in/marvin-morin-5b15291b3/" target="_blank" aria-label="Linkedin Marvin Morin">
+    <img src="/ressource/icons/linkedin.png" alt="Linkedin Marvin Morin" />
+  </a>
+</div>
+    </section>
+
+    <!-- SECTION FOOTER -->
+
+    <footer itemscope itemtype="https://schema.org/Organization">
+      <p>
+        <span itemprop="copyrightYear">2024</span> 
+        &copy; <span itemprop="copyrightHolder">Marvin Morin</span>
+        - Tous droits réservés
+      </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="/JS/main.js"></script>
+    <!-- AFFICHER & CACHER SECTIONS -->
+    <script src="/JS/afficher_cacher_sections.js"></script>
+    <!-- PROJET MODALE -->
+    <script src="/JS/projets.js"></script>
+    <!-- COMPETENCES -->
+    <script src="/JS/competences.js"></script>
+  </body>
+</html>
